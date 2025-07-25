@@ -25,6 +25,10 @@ prompts = [
     "What is the color of the sky?",
 ]
 
+# #### download model from huggingface
+# from huggingface_hub import snapshot_download 
+# snapshot_download("Qwen/Qwen2.5-3B-Instruct-AWQ", local_dir="./Qwen2.5-3B-Instruct-AWQ")
+
 model_path = './Qwen2.5-3B-Instruct-AWQ'
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = load_model(model_path)
