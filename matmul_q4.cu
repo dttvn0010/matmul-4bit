@@ -10,6 +10,7 @@
 #define int2bfloat16(x) __int2bfloat16_rn(x)
 #define BLOCK_SIZE 256      // lcm(n_inp, n_out)
 
+// Equivalent CPU code
 // inp 1xn_inp,  weight (n_inp/8) x n_out , zeros (n_inp/128) x n_out, scales (n_inp/128) x n_out
 /*
 for(int i = 0; i < n_out; i++)
