@@ -10,7 +10,6 @@ lib = CDLL('matmul_q4.so')
 lib.populate_weight.argtypes = [c_void_p, c_void_p, c_void_p, c_void_p, c_int, c_int, c_int, c_int, c_int]
 lib.populate_weight.restype = None
 
-
 lib.matmul_q4.argtypes = [c_void_p, c_void_p, c_void_p, c_void_p, c_void_p, c_int, c_int, c_int, c_int, c_int]
 lib.matmul_q4.restype = None
 
